@@ -50,9 +50,13 @@ kubeletArguments:
 ...
 kubernetesMasterConfig:
   apiServerArguments:
-  ...
-  feature-gates:
-  - ExpandPersistentVolumes=true
+    ...
+    feature-gates:
+    - ExpandPersistentVolumes=true
+  controllerArguments:
+    ...
+    feature-gates:
+    - ExpandPersistentVolumes=true
 
 # master-restart api
 # master-restart controllers
