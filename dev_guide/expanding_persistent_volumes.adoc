@@ -50,7 +50,6 @@ kubeletArguments:
 ...
 kubernetesMasterConfig:
   apiServerArguments:
-    ...
     feature-gates:
     - ExpandPersistentVolumes=true
   controllerArguments:
